@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ARCHIVO / SEÑAL // Teoría y Análisis de la Mediación y Gestión Cultural</title>
+  <meta name="description" content="Archivo audiovisual y portafolio de evidencias de aprendizaje - Licenciatura en Comunicación y Gestión Cultural, UNACAR." />
+
+  <!-- Tipografías: Syne, Plus Jakarta Sans y JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Syne:wght@700;800;900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="editorial-layout">
+
+  <!-- CAPA 2: CANVAS INTERACTIVO DE ONDAS Y PERTURBACIÓN -->
+  <canvas id="interactive-surface-canvas" aria-hidden="true"></canvas>
+
+  <!-- CAPA 3: TEXTURA FILM GRAIN & SCANLINES -->
+  <div class="film-grain-layer" aria-hidden="true"></div>
+  <div class="scanlines-layer" aria-hidden="true"></div>
+
+  <!-- BARRA DE NAVEGACIÓN Y CONTROL DE SEÑAL -->
+  <header class="site-header">
+    <div class="nav-bar">
+      <a href="index.html" class="nav-brand">
+        <span class="signal-dot">●</span>
+        <span class="brand-title">ARCHIVO / SEÑAL</span>
+        <span class="brand-divider">/</span>
+        <span class="brand-author">ÁNGEL GABRIEL GÓMEZ ÁNGEL</span>
+      </a>
+
+      <nav class="nav-menu" aria-label="Navegación del archivo">
+        <a href="#hero" class="nav-item nav-item--active"><span class="nav-num">00</span> [ PORTADA ]</a>
+        <a href="#encuadre" class="nav-item"><span class="nav-num">01</span> [ ENCUADRE ]</a>
+        <a href="#secuencia-1" class="nav-item"><span class="nav-num">02</span> [ SECUENCIA 1/2 ]</a>
+        <a href="#secuencia-2" class="nav-item"><span class="nav-num">03</span> [ SECUENCIA 2/2 ]</a>
+        <a href="#registro" class="nav-item"><span class="nav-num">04</span> [ REGISTRO ]</a>
+      </nav>
+
+      <div class="nav-status-cluster">
+        <span id="signal-state-badge" class="signal-state-badge">● SIGNAL: IDLE</span>
+        <span id="live-timecode" class="timecode-display">TC 00:00:00:00</span>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- 00 // HERO EDITORIAL -->
+    <section id="hero" class="hero-stage" aria-labelledby="hero-main-title">
+      <div class="hero-inner-content">
+        <div class="hero-header-metadata">
+          <span class="meta-block">[ REGISTRO CURRICULAR // CICLO AGOSTO — DICIEMBRE 2026 ]</span>
+          <span class="meta-block">[ UNACAR // FACULTAD DE CIENCIAS EDUCATIVAS ]</span>
+          <span class="meta-block meta-block--accent">[ STATUS: ARCHIVO EN VIVO ]</span>
+        </div>
+
+        <div class="hero-core-grid">
+          <div class="hero-side-strip">
+            <span class="strip-text">MATRÍCULA 251231 // LIC. EN COMUNICACIÓN Y GESTIÓN CULTURAL</span>
+          </div>
+
+          <div class="hero-title-group">
+            <div class="hero-pretitle">PORTAFOLIO DE EVIDENCIAS DIGITALES</div>
+            <h1 id="hero-main-title" class="hero-title">
+              TEORÍA Y ANÁLISIS DE LA MEDIACIÓN Y GESTIÓN CULTURAL
+            </h1>
+            
+            <div class="hero-identity-tape">
+              <div class="tape-cell">
+                <span class="tape-label">AUTOR / ESTUDIANTE:</span>
+                <strong class="tape-val">ÁNGEL GABRIEL GÓMEZ ÁNGEL</strong>
+              </div>
+              <div class="tape-cell">
+                <span class="tape-label">DOCENTE TITULAR:</span>
+                <strong class="tape-val">DRA. MELENIE FELIPA GUZMAN OCAMPO</strong>
+              </div>
+              <div class="tape-cell">
+                <span class="tape-label">PONDERACIÓN:</span>
+                <strong class="tape-val text-accent">SECUENCIA 1 DE 2 [50%]</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-footer-bar">
+          <div class="hero-summary">
+            <p>
+              Compilación sistemática, procesamiento analítico y resguardo audiovisual de evidencias de aprendizaje desarrolladas durante el curso.
+            </p>
+          </div>
+          <div class="hero-actions">
+            <a href="#secuencia-1" class="action-btn action-btn--primary">Explorar Evidencias Secuencia 1/2 ↓</a>
+            <a href="#encuadre" class="action-btn action-btn--secondary">Ficha de Asignatura ↓</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 01 // ENCUADRE DE LA ASIGNATURA & SITUACIÓN PROBLEMA -->
+    <section id="encuadre" class="editorial-section">
+      <div class="section-badge-bar">
+        <span class="index-num">01</span>
+        <div class="section-title-wrap">
+          <span class="section-tag">[ METADATOS Y CONTEXTUALIZACIÓN ]</span>
+          <h2 class="section-heading">FICHA TÉCNICA & SITUACIÓN PROBLEMA</h2>
+        </div>
+        <span class="section-line"></span>
+      </div>
+
+      <div class="encuadre-asymmetric-grid">
+        <div class="encuadre-main-card">
+          <div class="card-frame-mark top-left"></div>
+          <div class="card-frame-mark bottom-right"></div>
+          
+          <div class="card-topbar">
+            <span class="card-id">REG: SP-01 // CONSIGNAS DE FORMACIÓN</span>
+            <span class="card-pill">COMPETENCIA DISCIPLINAR</span>
+          </div>
+
+          <div class="card-body">
+            <h3 class="narrative-heading">Habilidades de Mediación e Intervención Territorial</h3>
+            <p>
+              Al ser gestores culturales que estructuran e implementan proyectos, se demuestra la capacidad para articular recursos humanos, técnicos y económicos. El proceso formativo sitúa el entorno inmediato de Ciudad del Carmen y el estado de Campeche como campo de análisis crítico y mediación comunitaria.
+            </p>
+
+            <div class="flow-track">
+              <div class="flow-node">
+                <span class="fn-code">01. FASE INICIAL</span>
+                <strong class="fn-name">Antecedentes y Teorías de la Mediación</strong>
+              </div>
+              <span class="fn-arrow">→</span>
+              <div class="flow-node">
+                <span class="fn-code">02. FASE INTERMEDIA</span>
+                <strong class="fn-name">Gestión Cultural y Poder</strong>
+              </div>
+              <span class="fn-arrow">→</span>
+              <div class="flow-node">
+                <span class="fn-code">03. FASE DE APLICACIÓN</span>
+                <strong class="fn-name">Territorio, Monografía y Economía</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="encuadre-ledger-card">
+          <div class="ledger-header">
+            <span class="ledger-title">[ IDENTIFICADOR INSTITUCIONAL ]</span>
+          </div>
+          <div class="ledger-rows">
+            <div class="l-row">
+              <span class="l-label">INSTITUCIÓN</span>
+              <strong class="l-value">Universidad Autónoma del Carmen</strong>
+              <span class="l-sub">Facultad de Ciencias Educativas</span>
+            </div>
+            <div class="l-row">
+              <span class="l-label">PROGRAMA</span>
+              <strong class="l-value">Lic. en Comunicación y Gestión Cultural</strong>
+            </div>
+            <div class="l-row">
+              <span class="l-label">DOCENTE</span>
+              <strong class="l-value">Dra. Melenie Felipa Guzman Ocampo</strong>
+            </div>
+            <div class="l-row">
+              <span class="l-label">PERIODO</span>
+              <strong class="l-value">Agosto — Diciembre 2026</strong>
+            </div>
+            <div class="l-row">
+              <span class="l-label">ESTADO DE SECUENCIA</span>
+              <strong class="l-value text-accent">Secuencia 1 de 2: Activa (50%)</strong>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- 02 // SECUENCIA 1/2: ARCHIVO DE EVIDENCIAS AUDIOVISUALES -->
+    <section id="secuencia-1" class="editorial-section">
+      <div class="section-badge-bar">
+        <span class="index-num">02</span>
+        <div class="section-title-wrap">
+          <span class="section-tag">[ EVALUACIÓN CURRICULAR ]</span>
+          <h2 class="section-heading">SECUENCIA DE APRENDIZAJE 1/2 // ARCHIVO DE EVIDENCIAS</h2>
+        </div>
+        <span class="section-line"></span>
+      </div>
+
+      <div class="archive-stream">
+        
+        <!-- EVIDENCIA 01: VIDEOS CORTOS DE ELENA ROMÁN (1080x1920 60FPS) -->
+        <article class="archive-master-entry">
+          <div class="entry-status-tape">
+            <div class="tape-left">
+              <span class="badge-index">EVIDENCIA // 01</span>
+              <span class="badge-topic">CRITERIO: ANTECEDENTES DE LA GESTIÓN CULTURAL</span>
+            </div>
+            <div class="tape-right">
+              <span class="badge-tool">LISTA DE COTEJO</span>
+              <span class="badge-score">VALOR: 10%</span>
+            </div>
+          </div>
+
+          <div class="entry-main-block">
+            <h3 class="entry-headline">Aportes Clave de la Lectura de Elena Román (3 Productos Animados / Videos Cortos)</h3>
+            <p class="entry-lead">
+              <strong>Consigna:</strong> Generar tres productos audiovisuales animados de corta duración orientados a social media, sintetizando los tres conceptos teóricos más representativos de la lectura de Elena Román sobre la evolución y antecedentes de la gestión cultural.
+            </p>
+
+            <!-- PROCESO METODOLÓGICO -->
+            <div class="methodology-timeline">
+              <div class="m-step">
+                <span class="m-num">FASE 01 / CONCEPTO</span>
+                <strong class="m-title">Extracción Teórica</strong>
+                <p>Análisis exhaustivo del texto de Elena Román y selección de los tres ejes estructurantes de la mediación.</p>
+              </div>
+              <div class="m-step">
+                <span class="m-num">FASE 02 / DESARROLLO</span>
+                <strong class="m-title">Guion & Estructura</strong>
+                <p>Redacción de guiones sintéticos con lenguaje formal y ritmo audiovisual dinámico.</p>
+              </div>
+              <div class="m-step">
+                <span class="m-num">FASE 03 / RESULTADO</span>
+                <strong class="m-title">Señal & Render</strong>
+                <p>Edición digital de 3 piezas verticales (9:16) con animación gráfica y sincronización de señal.</p>
+              </div>
+            </div>
+
+            <!-- ENCABEZADO TÉCNICO LIMPIO SIN RUTAS INTERNAS -->
+            <div class="gallery-topbar">
+              <span class="gt-label">[ REPRODUCTOR MULTICANALES // REACTIVO A SEÑAL ]</span>
+              <span class="gt-spec">FORMATO: 9:16 // 1080×1920 // 60 FPS</span>
+            </div>
+
+            <div class="video-matrix-grid">
+              
+              <!-- Video 01: Aportacion 1 -->
+              <div class="video-channel-card">
+                <div class="channel-top">
+                  <span class="ch-id">CANAL 01 // 1080×1920 60FPS</span>
+                  <span class="ch-rec">REC ●</span>
+                </div>
+                <div class="channel-screen">
+                  <video controls playsinline preload="metadata" class="native-av-player" data-track-id="Aporte 1">
+                    <source src="assets/videos/Aportacion 1.mp4" type="video/mp4" />
+                    <source src="assets/videos/Aportacion 1.mov" type="video/quicktime" />
+                    Tu navegador no soporta la reproducción directa del video.
+                  </video>
+                </div>
+                <div class="channel-metadata">
+                  <span class="cm-tag">APORTE 01 / ELENA ROMÁN</span>
+                  <strong class="cm-title">La profesionalización y el paso de la intuición a la metodología</strong>
+                  <p class="cm-desc">Análisis conceptual sobre la transición formativa, metodológica y técnica en la labor de la gestión cultural.</p>
+                </div>
+              </div>
+
+              <!-- Video 02: Aportacion 2 -->
+              <div class="video-channel-card">
+                <div class="channel-top">
+                  <span class="ch-id">CANAL 02 // 1080×1920 60FPS</span>
+                  <span class="ch-rec">REC ●</span>
+                </div>
+                <div class="channel-screen">
+                  <video controls playsinline preload="metadata" class="native-av-player" data-track-id="Aporte 2">
+                    <source src="assets/videos/Aportacion 2.mp4" type="video/mp4" />
+                    <source src="assets/videos/Aportacion 2.mov" type="video/quicktime" />
+                    Tu navegador no soporta la reproducción directa del video.
+                  </video>
+                </div>
+                <div class="channel-metadata">
+                  <span class="cm-tag">APORTE 02 / ELENA ROMÁN</span>
+                  <strong class="cm-title">El gestor como agente social, relacional y mediador</strong>
+                  <p class="cm-desc">El rol del gestor como puente activo y articulador dinámico entre creadores, comunidades e instituciones.</p>
+                </div>
+              </div>
+
+              <!-- Video 03: Aportacion 3 -->
+              <div class="video-channel-card">
+                <div class="channel-top">
+                  <span class="ch-id">CANAL 03 // 1080×1920 60FPS</span>
+                  <span class="ch-rec">REC ●</span>
+                </div>
+                <div class="channel-screen">
+                  <video controls playsinline preload="metadata" class="native-av-player" data-track-id="Aporte 3">
+                    <source src="assets/videos/Aportacion 3.mp4" type="video/mp4" />
+                    <source src="assets/videos/Aportacion 3.mov" type="video/quicktime" />
+                    Tu navegador no soporta la reproducción directa del video.
+                  </video>
+                </div>
+                <div class="channel-metadata">
+                  <span class="cm-tag">APORTE 03 / ELENA ROMÁN</span>
+                  <strong class="cm-title">El reto de la transformación social frente a la burocracia y el mercado</strong>
+                  <p class="cm-desc">Tensiones y desafíos éticos entre la incidencia comunitaria crítica y las presiones institucionales o mercantiles.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </article>
+
+        <!-- EVIDENCIA 02: DECÁLOGO Y FORO (PROGRAMADA) -->
+        <article class="archive-master-entry archive-master-entry--pending">
+          <div class="entry-status-tape">
+            <div class="tape-left">
+              <span class="badge-index">EVIDENCIA // 02</span>
+              <span class="badge-topic">CRITERIO: LA GESTIÓN COMO PODER</span>
+            </div>
+            <div class="tape-right">
+              <span class="badge-tool">LISTA DE COTEJO</span>
+              <span class="badge-score text-muted">EN PROCESO</span>
+            </div>
+          </div>
+          <div class="entry-main-block">
+            <h3 class="entry-headline">Decálogo para la Gestión y Gestores Culturales (Cartel Tabloide) & Foro Debate</h3>
+            <p class="entry-lead">
+              Elaboración en binas de un decálogo fundamentado en formato de cartel tabloide acompañado de su justificación teórica y participación activa en el foro debate de gestión y poder.
+            </p>
+            <div class="pending-terminal-bar">
+              <span class="terminal-text">> ESTADO: EN ESPERA DE REVISIÓN Y REGISTRO EN CRONOGRAMA</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- EVIDENCIA 03: MONOGRAFÍA Y ENSAYO (PROGRAMADA) -->
+        <article class="archive-master-entry archive-master-entry--pending">
+          <div class="entry-status-tape">
+            <div class="tape-left">
+              <span class="badge-index">EVIDENCIA // 03</span>
+              <span class="badge-topic">CRITERIO: TERRITORIO Y ECONOMÍA CULTURAL</span>
+            </div>
+            <div class="tape-right">
+              <span class="badge-tool">LISTA DE COTEJO</span>
+              <span class="badge-score text-muted">EN PROCESO</span>
+            </div>
+          </div>
+          <div class="entry-main-block">
+            <h3 class="entry-headline">Monografía Territorial de Campeche & Ensayo de Economía en la Gestión</h3>
+            <p class="entry-lead">
+              Desarrollo de la monografía territorial de los municipios de Campeche y elaboración de ensayo crítico sobre las dinámicas económicas de la cultura en México.
+            </p>
+            <div class="pending-terminal-bar">
+              <span class="terminal-text">> ESTADO: EN ESPERA DE REVISIÓN Y REGISTRO EN CRONOGRAMA</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- 03 // SECUENCIA 2/2 -->
+    <section id="secuencia-2" class="editorial-section">
+      <div class="section-badge-bar">
+        <span class="index-num">03</span>
+        <div class="section-title-wrap">
+          <span class="section-tag">[ SEGUNDO PERIODO ]</span>
+          <h2 class="section-heading">SECUENCIA DE APRENDIZAJE 2 DE 2</h2>
+        </div>
+        <span class="section-line"></span>
+      </div>
+
+      <div class="archive-master-entry archive-master-entry--pending">
+        <div class="entry-status-tape">
+          <span class="badge-index">PERIODO 2/2</span>
+          <span class="badge-score">PONDERACIÓN: 50%</span>
+        </div>
+        <div class="entry-main-block">
+          <h3 class="entry-headline">Segundo Bloque Curricular</h3>
+          <p class="entry-lead">
+            El módulo de evidencias, instrumentos de evaluación y productos integradores de la segunda mitad del ciclo escolar se publicarán en este repositorio al concluir el primer corte.
+          </p>
+          <div class="pending-terminal-bar">
+            <span class="terminal-text">> ESTATUS: BLOQUE PENDIENTE DE APERTURA</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 // REGISTRO DE AUTOR & CONTACTO -->
+    <section id="registro" class="editorial-section contact-section">
+      <div class="section-badge-bar">
+        <span class="index-num">04</span>
+        <div class="section-title-wrap">
+          <span class="section-tag">[ METADATOS DEL AUTOR ]</span>
+          <h2 class="section-heading">REGISTRO DE IDENTIFICACIÓN INSTITUCIONAL</h2>
+        </div>
+        <span class="section-line"></span>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-terminal-box">
+          <div class="terminal-header">
+            <span>TERMINAL DE AUTENTICACIÓN</span>
+            <span>UNACAR // FCE</span>
+          </div>
+          <p class="terminal-body-text">
+            Este repositorio digital funge como instrumento oficial de evaluación y archivo de evidencias curriculares para la materia Teoría y Análisis de la Mediación y Gestión Cultural.
+          </p>
+        </div>
+
+        <div class="contact-directory-list">
+          <div class="c-row">
+            <span class="cr-label">AUTOR / ALUMNO</span>
+            <strong class="cr-val">Ángel Gabriel Gómez Ángel</strong>
+          </div>
+          <div class="c-row">
+            <span class="cr-label">MATRÍCULA</span>
+            <strong class="cr-val">251231</strong>
+          </div>
+          <div class="c-row">
+            <span class="cr-label">DOCENTE</span>
+            <strong class="cr-val">Dra. Melenie Felipa Guzman Ocampo</strong>
+          </div>
+          <a href="mailto:251231@mail.unacar.mx" class="c-row c-row--link">
+            <span class="cr-label">CORREO INSTITUCIONAL</span>
+            <strong class="cr-val">251231@mail.unacar.mx ↗</strong>
+          </a>
+          <div class="c-row">
+            <span class="cr-label">PROGRAMA</span>
+            <strong class="cr-val">Lic. en Comunicación y Gestión Cultural — UNACAR</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- TERMINAL FOOTER -->
+  <footer class="editorial-footer">
+    <div class="footer-grid">
+      <span class="f-col">EVIDENCIAS CURRICULARES // UNACAR FCE</span>
+      <span class="f-col">DRA. MELENIE FELIPA GUZMAN OCAMPO</span>
+      <span class="f-col f-col--right">SECUENCIA 1 DE 2 (50%) // 2026</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
